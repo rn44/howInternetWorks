@@ -1,51 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!--Required Tags-->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta charset="UTF-8">
+    <meta name="description" content="This is a brief history of the Internet for a school project">
+    <!--Bootstrap Tags-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!--Title in Browser-->
     <title>About the Project</title>
 </head>
 <body>
 
+<!--Navigation Menu-->
 <div class="container-fluid">
     <h1>The History of the Internet</h1>
     <h2>By: Eric Broderick and Ricardo Nunes</h2>
+
+    <!--Navigation Bar-->
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <!--Navigation Bar Dropdown-->
+        <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle" data-toggle="dropdown" href="aboutPage.html" role="button"
+               aria-haspopup="true" aria-expanded="false">About the Project</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="aboutPage.html">About the Project</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="invention.html">Invention of the Internet</a>
+                <a class="dropdown-item" href="#">Browser Wars</a>
+                <a class="dropdown-item" href="#">Internet Search</a>
+                <a class="dropdown-item" href="#">Dot Com Bubble</a>
+                <a class="dropdown-item" href="#">People Power</a>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="teamPage.html">About Us</a>
+        </li>
+    </ul>
 </div>
 
-<div class="container">
-    <div class="row">
-        <div class="col-sm">
-            <a href="index.html">Home</a>
-        </div>
-        <div class="col-sm">
-            <strong>The Project</strong>
-        </div>
-        <div class="col-sm">
-            <a href="teamPage.html">About Us</a>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm">
-            <strong>The Project</strong>
-        </div>
-        <div class="col-sm">
-            <a href="invention.html">Invention of the Internet</a>
-        </div>
-        <div class="col-sm">
-            Browser Wars
-        </div>
-        <div class="col-sm">
-            Internet Search
-        </div>
-        <div class="col-sm">
-            Dot Com Bubble
-        </div>
-        <div class="col-sm">
-            People
-        </div>
-    </div>
-</div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
 
 </body>
 </html>
