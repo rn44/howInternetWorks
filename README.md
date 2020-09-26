@@ -7,4 +7,11 @@ Made by Eric Broderick and Ricardo Nunes
   * rnunes092420
     * Removed notes from Readme into separate file
     * Added changelog to Readme
-    
+  * rnunes092520
+    * Added Navbar
+    * Added Carousel 
+    * Added Team Page
+    * Added About Page
+    * Added Invention Page
+  * rnunes092620
+    * Added content to team page
