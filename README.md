@@ -17,3 +17,4 @@ Made by Eric Broderick and Ricardo Nunes
     * Added content to Team page
     * Added sidebar to About page
     * Added browser, dotcom, search, and social pages
+    * Added About page skeleton to Invention page
