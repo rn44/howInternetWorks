@@ -1,7 +1,7 @@
 # The History of the Internet Webpage
 Made by Eric Broderick and Ricardo Nunes
 
-[Project Homepage](index.html)
+[Project Homepage](https://rn44.github.io/historyInternet/index.html)
 
 ## Changelog
   * rnunes092420
@@ -14,4 +14,6 @@ Made by Eric Broderick and Ricardo Nunes
     * Added About Page
     * Added Invention Page
   * rnunes092620
-    * Added content to team page
+    * Added content to Team page
+    * Added sidebar to About page
+    * Added browser, dotcom, search, and social pages
