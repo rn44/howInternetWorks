@@ -18,3 +18,8 @@ Made by Eric Broderick and Ricardo Nunes
     * Added sidebar to About page
     * Added browser, dotcom, search, and social pages
     * Added About page skeleton to Invention page
+  * rnunes092620
+    * Swapped postioning of side "navbar" across the project
+    * Added skeletons to each page
+    * Added links to carousel pictures
+    
