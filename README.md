@@ -1,9 +1,10 @@
-# The History of the Internet Webpage
-Made by Eric Broderick and Ricardo Nunes
+# How the Internet Works Webpage
+Made by Ricardo Nunes
 
-[Project Homepage](https://rn44.github.io/historyInternet/index.html)
+[Project Homepage](https://rn44.github.io/howInternetWorks/index.html)
 
 ## Changelog
-  * rnunes092420
+  * rnunes092920
     * Cloned old repo. Creating initial commit. 
-    
+  * rnunes093020
+    * Added jumbotron to index page
