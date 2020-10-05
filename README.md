@@ -8,7 +8,7 @@ Made by Ricardo Nunes
     * Cloned old repo. Creating initial commit. 
   * rnunes093020
     * Added jumbotron to index page.
-  * rnunes010520
+  * rnunes100520
     * Added skeleton pages for each section.
     * Updated team page.
     * Updated about page.    
