@@ -1,108 +1,127 @@
-## _The Invention of the Internet_ Notes
-	• Licklider thought of idea for the internet (ARPANET) at MIT
-		○ Dreamed of connecting computers for faster communication
-	• Kleinrock came up with idea for packet queueing and distributed routing and switching
-		○ Led to "hot potato" routing, also known as packet switching
-		○ This is where even if certain links are broken, the message will still get to the endpoint
-	• Packets are like letters with to and from addresses
-	• 1969 brought about "time sharing" and the first computer network (Taylor at ARPA)
-	• ARPANET would use specialized computers to interface and become the "network" called IMPs (interface message processors)
-	• Several issues:
-		○ no common computer or network language
-		○ how to keep packets from flowing forever
-		○ how to keep computers from overflowing network
-		○ computers not meant to run all the time
-	• Initially just data files were transferred back and forth. Next big step was email
-	• Computer networks exploded in popularity after ARPA net demo.
-	• LANs and WANs started showing up inside companies and campuses
-	• Standardization of networks "language" came with TCP IP protocol
-	• Gateways allowed for different networks to interface with each other
-	• June 4th 1992 the internet became public instead of government owned
-	• Bernese Lee created World Wide Web which made it easier for your average person to browse the internet
-	• In 1992 only 50 pages existed on the internet
-    • 1993 Netscape was created to make it even easier as the world's breakthrough browser (not the first)
+## What is the internet
+	• The internet was originally created to be a distributed network capable of surviving an attack
+	• No one controls the internet
+	• Completely distributed network where no one has control of how or where the packets flow
+	• Access is granted and facilitated by ISPs 
 
-## Browser Wars
-	• Mosaic was first web browser? founded by Illinois University students
-	• Jim Clark was cofounder of Netscape. recruited Mosaic engineers
-	• Microsoft viewed browser based internet as a threat to Windows OS
-	• after a meeting between the two, communication broke down
-	• Netscape claimed Microsoft was trying to take them out and started to insult them
-	• Netscape also hired an antibody trust lawyer to file a suit against Microsoft
-	• Netscape started to publicly insult Microsoft
-	• Microsoft made it it's mission to destroy Netscape
-	• all employees brought in to create and improve internet exploder
-	• Microsoft sales teams started to approach customers telling them they'd cancel licenses is Netscape was installed on their hardware
-	• by 1997 IE4 was out for free and bundled with OS
-	• Netscape crumbled and was eventually bought out by AOL
-	• Microsoft was fine guilty of breaking antitrust laws and told to break the company up
-    • After an appeals court decision this order was rescinded
-    
-## Internet Search
-	• Yahoo was initially founded to help with gathering data for fantasy sports
-	• Yahoo started to take advertising on via banner ads in order to make money
-	• Yahoo's first real competition was Excite
-	• Excite was the first real search engine and much more powerful than Yahoo
-	• They competed to be a one stop shop of the internet with the addition of more and more features
-	• Both stopped focusing on search
-	• Google comes onto the stage next with a link based algorithm
-	• The more links to a page the higher the page ranked in its search
-	• Google was initially written off as "just another search engine"
-	• Excite was offered the opportunity to buy Google early on when it was only worth about $1 million.
-	• Google founders gathered about that much in Venture Capital funding
-	• They then got two separate $12 million VCs
-	• Google struggled to make money and was bleeding out about $500k a month
-	• Google refused to include any flashy or banner ads
-	• Bill Gross thought of keyword based data collection for users to create a profile to sell to advertisers
-		○ This lead to creation of Overture
-		○ Essentially internet based yellow pages
-	• Google essentially stole that idea as a way to make money on their site via AdWords
-	• Overture and Google settled out of court
-	• Google decided to use an auction for their IPO, angering Wall Street 
-	
-## Dot Com Bubble
-	• eBay founded in one weekend in 1995 by one man in an attempt to generate an efficient and accessable auction site
-	• amazon founded as an online book company able to offer more books than any one bookshop
-	• moore's law (silicon transistors double every 18 months)
-	• metcalf's law (more users, more connections)
-	• Bezos believed in sacrificing profits for growth
-	• "get big fast"
-	• Amazon focused on public key encryption to safely handle credit card info
-	• eBay rebranded as a "collectables" auction website and went public ($2 million dollar valuation after day 1)
-	• analyst predicted Amazon stock doubling after 1 year creating a buying grammar frenzy and start of .com bubble
-	• Created a boom in silicon valley
-	• Start of day trading
-	• Small companies popped up offering anything and everything
-	• VCs assumed most would fail but assumed and hoped some would hit it big
-	• even Amazon and eBay felt their market value was inflated by 1999
-	• Fed Chair raised interest rates in 2000 popping the bubble
-	• "Black Friday" is biggest NASDAQ loss ever
-	• Analyst (Henry Blodgett) was blamed for bubble
-	• Allowed for extremely quick build out of fiber and copper computer networks
-	• Caused brick and mortar stores to take internet seriously
-	
-## People Power
-	• Youtube - cultural shift from traditional media broadcasting to user based submissions
-	• Digg - cultural shift from traditional media editorial process (newspapers, tv, etc.) content raises and falls based on user submissions and promotion / demotion
-	• Facebook - attempt to link users from around the world
-	• Innovation of MP3 compression sparked computer based music players
-	• This led to start of music file sharing
-	• Music industry fought hard against all of this
-	• Shawn Fanning - created Napster
-	• Peer to peer file sharing
-	• Spread rapidly throughout colleges
-	• In 4 months it passed 1 million downloads
-	• One of the first social networks
-	• Big names like Dr. Dre and Metallica along with music industry lawyers fought against it
-	• Court found it illegal and made Napster shut down
-	• Brought about copywrite protected stores like iTunes
-	• Spawned other P2P software like Kazaa and LimeWire
-	• Web 2.0 - interactive / social media centric internet
-	• MySpace - surpassed Google in page views. bought by Robert Murdock (newscorp)
-	• Facebook - started with Harvard, then colleges, now worldwide
-	• Zuckerberg hoped to create a virtual social graph (global links between all people)
-	• Facebook opened up am internal development platform for ads and mini applications
-	• Blogging gaining momentum killing transitional journalism
-	• Craigslist eliminating need for classified and P2P ads
-	• Wikipedia created with hopes of user curated and maintained encyclopedia entries
+## Wires Cables Wifi
+	• Data is transferred similarly to mail.
+	• Instead of letters, the messages being sent are comprised of 0's and 1's called bits
+	• Bits are assembled into groups of 8 called bytes
+	• Bits can be thought of atoms that make up data
+	• Today we send bits through 3 main mediums (electricity, light, radio)
+	• Bandwidth - transmission capacity, measured by bitrate
+	• Bitrate - number of bits per second a system can transmit
+	• Latency - time it takes for a bit to travel from sender to receiver
+	• Ethernet (copper wires) allow for cheap data transfer of electrical signals. They suffer data loss and interference very quickly over long distances
+	• Fiber (optical wires) allow for fast data transfer of light signals. They are also extremely efficient and suffer little too no loss even at large distances. Expensive cables and very hard to work with.
+	• Radio signals (wireless) allow for transfer of data without physical connections. Bits are translated into different wave lengths based on different frequencies and then translated back into data at the receiving end. Signal loss is great at distances (distance varies depending on frequency i.e. AM vs FM)
+	• Wi-Fi takes local radio waves and converts them into copper or fiber messages to be sent over the physical network
+	• Future may bring about new ways to share data but elementary bits concept will likely remain.
 
+## IP Addresses and DNS
+	• Initially there was no standard in packet sending.
+	• Internetworking Protocol (IP) was developed by Vint Cerf and Bob Kahn
+	• Internet is a network of networks
+	• Local networks (i.e. devices like laptops and cellphones connected to home wifi router) are then connected to a greater network through an ISP (internet service provider). The ISP then connects you too other ISPs and networks that are all interconnected
+	• Internet is a design philosophy and architecture expressed in a set of protocols
+	• Protocol - well known set of rules and standards that all parties agree to use to communicate between machines
+	• This has allowed the expansion of the internet and internet capable devices due to uniform standards (i.e. which protocols to use and work with)
+	• All devices on the internet have a unique address (just a number) within a given network
+	• These unique IP addresses work similar to mailing addresses
+	• Visiting a website can be broken down / thought of as your computer sending mail with the IP address of the website as the recipient address and a return address of your computer. This allows the website to return information to you in the same manner.
+	• IP addresses can be broken down into several parts
+	• Traditional IP addresses are 32 bits long (8 bits for each of the 4 parts)
+	• The IP addresses used to be broken down into country/region/subnetwork/device
+	• This is IPv4 (designed in 1973 and adopted in 1980s
+	• Allowed up to 4 billion unique addresses (devices) to be connected to the internet
+	• The world is currently in transition to IPv6
+	• IPv6 uses 128 bits per address (8 segments of 4 hexadecimal characters)
+	• Most people never know or see actual IP addresses due to DNS
+	• DNS - domain name server is a lookup that corelates names to addresses
+	• DNS servers are broken up in a manner that dedicates certain servers to handle certain website types (i.e. some handle .com while others handle .org)
+	• DNS was originally designed to be an open and public communication protocol
+	• Due to its openness, it is susceptible to cyber attacks like DNS spoofing
+	• This allows malicious users to reroute unknowing users to fake or incorrect websites
+	• Both DNS and IP addresses were designed with scalability in mind
+	
+
+## Packets, Routing, and Reliability
+	• Data transfers on the internet are not point to point but very indirect
+	• Paths can change extremely often, even during a transmission
+	• Packets are data traveling along the internet and work more like cars than trains.
+	• Packets are allowed to take any available road (whether it is the most efficient route or not)
+	• Packets can contain almost any type of data and depending on size, messages may be broken up into several packets
+	• Groups of packets can take diverging paths and arrive at the destination at different times and potentially out of order
+	• Packets simply carry the data as well as headers containing to and from addresses and are moved through the networks via Routers
+	• Routers act like traffic managers to keep packets moving smoothly through the network
+	• Routers attempt to push packets through the "cheapest" available path at any given moment
+	• Having multiple routes allows the network to be fault tolerant (i.e. multiple roads can be closed or blocked but packages can still get to their end destination)
+	• TCP (transmission control protocol) - manages the sending and receiving of all your data packets (i.e. guaranteed mail service where TCP validates all packets have been received) so that when all packets are received they can be reassembled
+	• TCP and Routing were built with scalability in mind. More routers = more redundancy
+	
+
+## HTTP and HTML
+	• To access the internet, you use a web browser to enter the URL (uniform resource locator) of a webpage
+	• Your computer then reaches out to a DNS which seems HTTP responses back to your computer
+	• HTTP - hypertext transfer protocol, the language used to communicate between web browsers and servers
+	• Relatively simple messages mainly made up of get requests
+	• Get requests are simple lookup requests (i.e. get document-name or get /login) 
+	• HTML - hypertext markup language, the language used to tell a web browser how a page should look
+	• HTML is made up of tags for fonts, links, images, formatting, alignment, etc.
+	• Images and videos are not included in HTML but see separate files that are linked to via separate URLs 
+	• These requests are handled via separate HTTP requests from the main page and are displayed as they come in
+	• Obviously the more image, video, other HTTP requests, the slower a page loads
+	• When sending information to a server, your computer sends Post requests to servers (i.e. post requests to websites with login information)
+	• Cookies - temporary files that allow websites to save data and remember things like who you are
+	• HTTP communications are handled via plain text requests and are susceptible to hackers and other security vulnerabilities
+	• This led to creation of SSL (secure socket layer) and TSL (transport layer security) incorporated into HTTPS 
+	• This is done via digital certificates that provided by verified websites
+	• If the certificates being sent by websites have not been verified, you web browser will warn you
+	
+
+## Encryption Public Keys
+	• Encryption (scrambling or changing a message to hide it) allows us to safely transfer private data over the open and unsecured internet
+	• Decryption is the process of unscrambling am encrypted message to make it readable
+	• Caesar's Cypher was one of the first encryption methods
+	• Based on Caesar's idea of "encrypting" messages so that intercepted messages were unreadable to his enemies, letters in the messages were shifted a certain amount of letters up or down in the alphabet (i.e. all letters were shifted up or down 3 letters)
+	• Keys are the amount of letters that a sender and receiver have agreed upon so that the messages can be unlocked
+	• HELLO with a key of 5 would be MJQQT
+	• This cypher is extremely simple and easy to crack (brute force would only take at most 26 different shift combinations)
+	• A 10 digit encryption key on the other hand would create 10 billion possible solutions
+	• While this would take a human centuries it would still only take a computer seconds
+	• Today's encryption keys are 256 bits
+	• Symmetric encryption is when the same key is used to encrypt and decrypt messages
+	• Asymmetric encryption is what is used by communication on the internet
+	• There is a public key for encrypting and a private key for decrypting
+	• Public key is shared so that anyone can encrypt messages (normally sent by websites to clients)
+	• This way messages can only be decrypted once received back to website servers via their private keys
+	• Public keys can open delivery slots on mailboxes, private keys can open the mailbox
+	• This pubic / private key encryption methods is the basis for SSL and TLS encryption protocols
+	• Web browsers indicate this with the lock icon and https
+
+## Cybersecurity Crime
+	• Cyber crimes are on the rise
+	• From stolen credit cards and identities to nuclear power plants and drones, almost nothing is off limits to malicious actors
+	• Vulnerabilities in both hardware and software are exploited
+	• Sometimes vulnerabilities are simply decisions made by people using software that developers did not intend or account for
+	• Cyber crimes are committed by malicious terrorists and state actors as well as bored teenagers looking for bragging rights
+	• Most countries now have a dedicated cyber security "army" 
+	• Estimated that the next world war will be one of cyber warfare (i.e. disruptions in water, electrical, or transportation systems of countries)
+	• Computer Virus is similar to real world virus
+	• Normally installed unintentionally
+	• Hand user and their computer
+	• Possible to spread to other computers
+	• Vírus creators tend to trick people into installing software via false pretenses (i.e. a fake "security" update)
+	• Vírus can also enter a computer system via a system or software vulnerability (bypassing need to be installed by user)
+	• Depending on the virus it can steal or delete data, control programs, or grant remote operation or access
+	• Vírus can also be used to infect and control computers in the form of a "BotNet"
+	• BotNets can then be used to perform DDoS (distributed denial of service) attacks
+	• This is when websites are overwhelmed with too many requests at once from various sources
+	• Phishing - trick users into sharing personal or sensitive data, usually in the form of fake emails
+	• These emails normally link to fake websites where users give the fake website their real user name and password
+	• 90% of system hacks are not due to software or system vulnerabilities but instead human mistakes
+	• Use strong passwords
+	• Verify authentic web addresses
+	• Stay up to date with security patches
+	• Don't install software from unknown sources
