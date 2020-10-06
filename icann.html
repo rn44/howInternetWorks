@@ -16,11 +16,6 @@
 
 <!--Header NavBar-->
 <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
-    <a class="navbar-brand" href="https://njit.instructure.com/courses/12731" target="_blank">IS-601</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
             <li class="nav-item">
@@ -46,6 +41,12 @@
             </li>
         </ul>
     </div>
+    <a class="navbar-brand justify-content-end" href="https://njit.instructure.com/courses/12731"
+       target="_blank">IS-601</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 </nav>
 
 <!--Main Page-->
@@ -54,9 +55,10 @@
         <!--Sidebar Card-->
         <div class="col-sm-3 d-flex justify-content-center">
             <div class="card" style="width: 18rem;">
-                <img src="./Assets/router.jpg" class="card-img-top" alt="Internet">
+                <img src="./Assets/domain.png" class="card-img-top" alt="Internet">
                 <div class="card-body">
                     <h5 class="card-title"><a href="index.html">Home Page</a></h5>
+                    <h5 class="card-title mt-3"><a href="aboutPage.html">The Project</a></h5>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item"><strong>Domain Names and ICANN</strong></li>
                         <li class="list-group-item"><a href="routing.html">IP Address, Packets, and Routing</a></li>
@@ -64,7 +66,6 @@
                         <li class="list-group-item"><a href="http.html">HTTP and HTTPS protocols</a></li>
                         <li class="list-group-item"><a href="w3c.html">W3C and HTML and CSS</a></li>
                     </ul>
-                    <h5 class="card-title mt-3"><a href="aboutPage.html">About the Project</a></h5>
                 </div>
             </div>
         </div>
@@ -94,7 +95,7 @@
             </p>
 
             <!--Footer Page Nav-->
-            <nav aria-label="...">
+            <div class="col-sm-11 pagination justify-content-end">
                 <ul class="pagination justify-content-end">
                     <li class="page-item disabled">
                         <span class="page-link">Previous</span>
@@ -108,7 +109,7 @@
                         <a class="page-link" href="routing.html">Next</a>
                     </li>
                 </ul>
-            </nav>
+            </div>
         </div>
     </div>
 </div>
