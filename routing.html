@@ -71,25 +71,37 @@
         <div class="col-sm-9">
             <h2>IP Address, Packets, and Routing</h2>
             <p>
-                This project is a continuation of a previous project titled,<a href="https://rn44.github.io/historyInternet/index.html" target="_blank"><strong>"History of the Internet"</strong></a>.
+                The internet has always been a network of networks (some smaller than others). Local networks (i.e. devices like laptops and cellphones connected to a home Wi-Fi enabled or wired router) are then connected to a greater network through an ISP (internet service provider) like Comcast or Verizon. The ISP then connects you to other ISPs and other networks that are all interconnected. While this may all seem simple and intuitive now, it was not always the case.
             </p>
             <p>
-                While that project goes through a rudimentary introduction to the internet and its history, this project is focused on how the internet has evolved and works today.
+                During the initial days of the internet, there was no standard in packet sending or receiving. Internetworking Protocol (IP) was developed by Vint Cerf and Bob Kahn. They thought that the internet would be better served with a design philosophy and architecture expressed in a set of uniform protocols. A protocol is well known set of rules and standards that all parties agree to use to communicate between machines. This has allowed the expansion of the internet and internet capable devices due to uniform standards (i.e. which protocols to use and work with).
             </p>
             <p>
-                The first topic covered in this project is the <a href="icann.html">Domain Names and ICANN</a>. Here we focus on what domains are and the regulatory body that manages them.
+                All devices on the internet have a unique address (just a number) within a given network. These unique IP addresses work similar to, and can even be thought of as, mailing street addresses of the physical world. Visiting a website can be broken down / thought of as your computer sending mail with the IP address of the website as the recipient address and a return address of your computer. This allows the website to return information to you in the same manner.
+
             </p>
             <p>
-                The next topic is how the addressing scheme of the internet as well has how information is sent and received. This is all covered in the <a href="routing.html">IP Address, Packets, and Routing</a> section.
+                Traditional IP addresses are 32 bits long and can be broken down into four 8-bit segments. While this is no longer always the case, IP addresses used to be segmented into country/region/subnetwork/device. This previous standard of segmenting IP addresses was known as IPv4. It was originally designed in 1973 and widely adopted in the 1980s.
+
             </p>
             <p>
-                How IP addresses and Domain Names correlate and allow users to get to where they want to go is covered in the next section, <a href="dns.html">Domain Name Server (DNS)</a>.
+                While the original IPv4 address allocation allowed up to 4 billion unique addresses (devices) to be connected to the internet, the world and its engineers realized that this would quickly no longer be enough. Due to this, the world is currently in transition to a new standard of IP address allocation called IPv6. This new IP addressing schema uses 128 bits per address (8 segments of 4 hexadecimal characters).
+
             </p>
             <p>
-                Next we take a look at how the internet is accessed, as well as a brief discussion about security can be viewed in the <a href="http.html">HTTP and HTTPS protocols</a> section.
+                Even with the implementation of these new, more complex, IP addresses, browsing the internet will not change. This is due to the fact that people no longer need to rely on IP addresses to browse the internet like the early days. In today’s world, most people never know or see actual IP addresses of websites due to DNS.
             </p>
             <p>
-                Lastly, we discuss the visual evolution of the browser renderings through graphic markups thanks to <a href="w3c.html">W3C and HTML and CSS</a>.
+                Data transfers on the internet are not point to point but very indirect. Paths can change extremely often, even during a transmission. Packets are data traveling along the internet and work more like cars than trains. Packets are allowed to take any available road (whether it is the most efficient route or not).
+            </p>
+            <p>
+                Packets can contain almost any type of data and depending on size, messages may be broken up into several packets. Groups of packets can take diverging paths and arrive at the destination at different times and potentially out of order. Packets simply carry the data as well as headers containing to and from addresses and are moved through the networks via Routers.
+            </p>
+            <p>
+                Keeping with the analogy of IP addresses being similar to mailing street addresses, routers can be thought of as mail sorting machines located within a post office. Routers act like traffic managers to keep packets moving smoothly through the network. Routers attempt to push packets through the "cheapest" available path at any given moment. Having multiple routes allows the network to be fault tolerant (i.e. multiple roads can be closed or blocked but packages can still get to their end destination).
+            </p>
+            <p>
+                TCP (transmission control protocol) manages the sending and receiving of all your data packets (i.e. guaranteed mail service where TCP validates all packets have been received) so that when all packets are received, they can be reassembled. TCP and Routing were built with scalability in mind. The hope and design philosophy is more routers = more redundancy.
             </p>
 
             <!--Footer Page Nav-->
