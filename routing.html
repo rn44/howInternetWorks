@@ -16,11 +16,6 @@
 
 <!--Header NavBar-->
 <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
-    <a class="navbar-brand" href="https://njit.instructure.com/courses/12731" target="_blank">IS-601</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
             <li class="nav-item">
@@ -46,6 +41,11 @@
             </li>
         </ul>
     </div>
+    <a class="navbar-brand" href="https://njit.instructure.com/courses/12731" target="_blank">IS-601</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 </nav>
 
 <!--Main Page-->
@@ -54,17 +54,16 @@
         <!--Sidebar Card-->
         <div class="col-sm-3 d-flex justify-content-center">
             <div class="card" style="width: 18rem;">
-                <img src="./Assets/router.jpg" class="card-img-top" alt="Internet">
+                <img src="./Assets/ethernet.jpg" class="card-img-top" alt="Internet">
                 <div class="card-body">
-                    <h5 class="card-title"><a href="index.html">Home Page</a></h5>
+                    <h5 class="card-title"><a href="aboutPage.html">The Project</a></h5>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item"><a href="domain.html">Domain Names and ICANN</a></li>
+                        <li class="list-group-item"><a href="icann.html">Domain Names and ICANN</a></li>
                         <li class="list-group-item"><strong>IP Address, Packets, and Routing</strong></li>
                         <li class="list-group-item"><a href="dns.html">Domain Name Server (DNS)</a></li>
                         <li class="list-group-item"><a href="http.html">HTTP and HTTPS protocols</a></li>
                         <li class="list-group-item"><a href="w3c.html">W3C and HTML and CSS</a></li>
                     </ul>
-                    <h5 class="card-title mt-3"><a href="aboutPage.html">About the Project</a></h5>
                 </div>
             </div>
         </div>
@@ -72,43 +71,64 @@
         <div class="col-sm-9">
             <h2>IP Address, Packets, and Routing</h2>
             <p>
-                This project is a continuation of a previous project titled,<a href="https://rn44.github.io/historyInternet/index.html" target="_blank"><strong>"History of the Internet"</strong></a>.
+                The internet has always been a network of networks (some smaller than others). Local networks (i.e. devices like laptops and cellphones connected to a home Wi-Fi enabled or wired router) are then connected to a greater network through an ISP (internet service provider) like Comcast or Verizon. The ISP then connects you to other ISPs and other networks that are all interconnected. While this may all seem simple and intuitive now, it was not always the case.
             </p>
             <p>
-                While that project goes through a rudimentary introduction to the internet and its history, this project is focused on how the internet has evolved and works today.
+                Instead of letters, the messages being sent are comprised of 0's and 1's called bits. Bits are assembled into groups of 8 called bytes. Bits can be thought of atoms that make up data. Today we send bits through 3 main mediums (electricity, light, radio). The transmission capacity of these three mediums is referred to as bandwidth. This can be thought of how many “letters” (bits) can fit into a cable or wave at a time. How fast these “letters” (bits) travel is known as the bitrate and the time it takes them to get from origin to destination is known as latency.
             </p>
             <p>
-                The first topic covered in this project is the <a href="icann.html">Domain Names and ICANN</a>. Here we focus on what domains are and the regulatory body that manages them.
+                As mentioned above, we have three main transmission mediums, electricity, light, and radio. Each of these transmission mediums has a specific material, speed, and set of pros and cons. The first medium we look at is ethernet. Ethernet cables are made up of copper wires that allow for cheap data transfer of electrical signals. They suffer data loss and interference very quickly over long distances.
             </p>
             <p>
-                The next topic is how the addressing scheme of the internet as well has how information is sent and received. This is all covered in the <a href="routing.html">IP Address, Packets, and Routing</a> section.
+                The next medium is fiber optic cables. Fiber optical cables allow for fast data transfer of light signals. They are also extremely efficient and suffer little too no loss even at large distances. Expensive cables and very hard to work with.
             </p>
             <p>
-                How IP addresses and Domain Names correlate and allow users to get to where they want to go is covered in the next section, <a href="dns.html">Domain Name Server (DNS)</a>.
+                Lastly, we have radio signals. Radio signals (wireless) allow for transfer of data without physical connections. Bits are translated into different wave lengths based on different frequencies and then translated back into data at the receiving end. Signal loss is great at distances (distance varies depending on frequency i.e. AM vs FM). Wi-Fi takes local radio waves and converts them into copper or fiber messages to be sent over the physical network.0
             </p>
             <p>
-                Next we take a look at how the internet is accessed, as well as a brief discussion about security can be viewed in the <a href="http.html">HTTP and HTTPS protocols</a> section.
+                During the initial days of the internet, there was no standard in packet sending or receiving. Internetworking Protocol (IP) was developed by Vint Cerf and Bob Kahn. They thought that the internet would be better served with a design philosophy and architecture expressed in a set of uniform protocols. A protocol is well known set of rules and standards that all parties agree to use to communicate between machines. This has allowed the expansion of the internet and internet capable devices due to uniform standards (i.e. which protocols to use and work with).
             </p>
             <p>
-                Lastly, we discuss the visual evolution of the browser renderings through graphic markups thanks to <a href="w3c.html">W3C and HTML and CSS</a>.
+                All devices on the internet have a unique address (just a number) within a given network. These unique IP addresses work similar to, and can even be thought of as, mailing street addresses of the physical world. Visiting a website can be broken down / thought of as your computer sending mail with the IP address of the website as the recipient address and a return address of your computer. This allows the website to return information to you in the same manner.
+            </p>
+            <p>
+                Traditional IP addresses are 32 bits long and can be broken down into four 8-bit segments. While this is no longer always the case, IP addresses used to be segmented into country/region/subnetwork/device. This previous standard of segmenting IP addresses was known as IPv4. It was originally designed in 1973 and widely adopted in the 1980s.
+            </p>
+            <p>
+                While the original IPv4 address allocation allowed up to 4 billion unique addresses (devices) to be connected to the internet, the world and its engineers realized that this would quickly no longer be enough. Due to this, the world is currently in transition to a new standard of IP address allocation called IPv6. This new IP addressing schema uses 128 bits per address (8 segments of 4 hexadecimal characters).
+            </p>
+            <p>
+                Even with the implementation of these new, more complex, IP addresses, browsing the internet will not change. This is due to the fact that people no longer need to rely on IP addresses to browse the internet like the early days. In today’s world, most people never know or see actual IP addresses of websites due to DNS.
+            </p>
+            <p>
+                Data transfers on the internet are not point to point but very indirect. Paths can change extremely often, even during a transmission. Packets are data traveling along the internet and work more like cars than trains. Packets are allowed to take any available road (whether it is the most efficient route or not).
+            </p>
+            <p>
+                Packets can contain almost any type of data and depending on size, messages may be broken up into several packets. Groups of packets can take diverging paths and arrive at the destination at different times and potentially out of order. Packets simply carry the data as well as headers containing to and from addresses and are moved through the networks via Routers.
+            </p>
+            <p>
+                Keeping with the analogy of IP addresses being similar to mailing street addresses, routers can be thought of as mail sorting machines located within a post office. Routers act like traffic managers to keep packets moving smoothly through the network. Routers attempt to push packets through the "cheapest" available path at any given moment. Having multiple routes allows the network to be fault tolerant (i.e. multiple roads can be closed or blocked but packages can still get to their end destination).
+            </p>
+            <p>
+                TCP (transmission control protocol) manages the sending and receiving of all your data packets (i.e. guaranteed mail service where TCP validates all packets have been received) so that when all packets are received, they can be reassembled. TCP and Routing were built with scalability in mind. The hope and design philosophy is more routers = more redundancy.
             </p>
 
             <!--Footer Page Nav-->
-            <nav aria-label="...">
+            <div class="col-sm-11 pagination justify-content-end">
                 <ul class="pagination justify-content-end">
-                    <li class="page-item disabled">
-                        <span class="page-link">Previous</span>
+                    <li class="page-item">
+                        <a class="page-link" href="icann.html">Previous</a>
                     </li>
-                    <li class="page-item"><a class="page-link" href="routing.html">1</a></li>
+                    <li class="page-item"><a class="page-link" href="icann.html">1</a></li>
                     <li class="page-item active" aria-current="page"><span class="page-link"> 2 <span class="sr-only">(current)</span></span></li>
                     <li class="page-item"><a class="page-link" href="dns.html">3</a></li>
                     <li class="page-item"><a class="page-link" href="http.html">4</a></li>
                     <li class="page-item"><a class="page-link" href="w3c.html">5</a></li>
                     <li class="page-item">
-                        <a class="page-link" href="routing.html">Next</a>
+                        <a class="page-link" href="dns.html">Next</a>
                     </li>
                 </ul>
-            </nav>
+            </div>
         </div>
     </div>
 </div>

@@ -16,11 +16,6 @@
 
 <!--Header NavBar-->
 <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
-    <a class="navbar-brand" href="https://njit.instructure.com/courses/12731" target="_blank">IS-601</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
             <li class="nav-item">
@@ -46,6 +41,12 @@
             </li>
         </ul>
     </div>
+    <a class="navbar-brand justify-content-end" href="https://njit.instructure.com/courses/12731"
+       target="_blank">IS-601</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 </nav>
 
 <!--Main Page-->
@@ -54,9 +55,9 @@
         <!--Sidebar Card-->
         <div class="col-sm-3 d-flex justify-content-center">
             <div class="card" style="width: 18rem;">
-                <img src="./Assets/router.jpg" class="card-img-top" alt="Internet">
+                <img src="./Assets/domain.png" class="card-img-top" alt="Internet">
                 <div class="card-body">
-                    <h5 class="card-title"><a href="index.html">Home Page</a></h5>
+                    <h5 class="card-title mt"><a href="aboutPage.html">The Project</a></h5>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item"><strong>Domain Names and ICANN</strong></li>
                         <li class="list-group-item"><a href="routing.html">IP Address, Packets, and Routing</a></li>
@@ -64,7 +65,6 @@
                         <li class="list-group-item"><a href="http.html">HTTP and HTTPS protocols</a></li>
                         <li class="list-group-item"><a href="w3c.html">W3C and HTML and CSS</a></li>
                     </ul>
-                    <h5 class="card-title mt-3"><a href="aboutPage.html">About the Project</a></h5>
                 </div>
             </div>
         </div>
@@ -72,34 +72,64 @@
         <div class="col-sm-9">
             <h2>Domain Names and ICANN</h2>
             <p>
-                This project is a continuation of a previous project titled,<a href="https://rn44.github.io/historyInternet/index.html" target="_blank"><strong>"History of the Internet"</strong></a>.
+                The internet as we know it today, and oftentimes referred to as the world wide web, was invented by Tim
+                Berners-Lee. While inter-computer and inter-network communication already existed thanks to the ARPANET,
+                Berners-Lee dreamt up <a href="http.html">HTTP</a> (Hypertext Transfer Protocol) communication across
+                the internet. Berners-Lee
+                also founded and is still the current director of the <a href="w3c.html">W3C</a> (World Wide Web
+                Consortium). Both of which
+                will be discussed in greater detail in later sections.
             </p>
             <p>
-                While that project goes through a rudimentary introduction to the internet and its history, this project is focused on how the internet has evolved and works today.
+                The innovation that Berners-Lee brought to the forefront, was simplicity and ease of access. As we will
+                go into detail later, HTTP is the language that is used for communication between web browsers and <a
+                    href="dns.html">DNS</a>
+                (domain name servers). These domain name servers will also be described in greater detail later, but
+                they are extremely important to making the internet as we know it accessible. They are so important that
+                there is a regulatory group specifically in charge of managing domain namespaces as well as their
+                databases. This regulatory group is known as ICANN (Internet Corporation for Assigned Names and Numbers)
             </p>
             <p>
-                The first topic covered in this project is the <a href="icann.html">Domain Names and ICANN</a>. Here we focus on what domains are and the regulatory body that manages them.
+                ICANN “coordinates the allocation and assignment of names in the root zone of the <a href="dns.html">Domain
+                Name Server (DNS)</a> and coordinates the development and implementation of policies concerning the
+                registration of second-level domain names” (ICANN.org). Put in similar terms, the ICANN is responsible for
+                allocating and maintaining the name spaces for the internet. This is both the “website name” (i.e. Facebook,
+                Amazon, Google, etc.) as it is referred to by many people as well as the “dot com” segment.
             </p>
             <p>
-                The next topic is how the addressing scheme of the internet as well has how information is sent and received. This is all covered in the <a href="routing.html">IP Address, Packets, and Routing</a> section.
+                The “dot com” segments can more accurately be called top-level domains. The most generic of these is
+                “com”, but several others exist. “Com” was initially used in order to be the commercial top-level
+                domain, but it has since become the generic one to use. There is also .gov for government and it’s
+                agencies, .mil for US military use, .edu for educational use (mainly colleges and universities), and
+                then .org and .net for additional “generic” top level domains.
             </p>
-            <p>
-                How IP addresses and Domain Names correlate and allow users to get to where they want to go is covered in the next section, <a href="dns.html">Domain Name Server (DNS)</a>.
-            </p>
-            <p>
-                Next we take a look at how the internet is accessed, as well as a brief discussion about security can be viewed in the <a href="http.html">HTTP and HTTPS protocols</a> section.
-            </p>
-            <p>
-                Lastly, we discuss the visual evolution of the browser renderings through graphic markups thanks to <a href="w3c.html">W3C and HTML and CSS</a>.
+            <p>The domain names listed above are by no means exhaustive and several other have been added and maintained
+                by ICANN. This can be international and country specific codes like .uk, .fr, .de, etc. as well as even
+                some city specific domains like .tokyo, .london, .nyc, etc. ICANN has also expanded and allowed for the
+                use of several other generic top level domains in the form of domains like .xyz, .online, and several
+                others that can be seen below.
             </p>
 
+            <div class="row">
+                <div class="col-sm text-center">
+                    <h6><strong>Top 10 Generic Top-Level Domains</strong></h6>
+                    <img src="./Assets/nameStat_gTLDs.PNG">
+                </div>
+                <div class="col-sm text-center">
+                    <h6><strong>Top 10 City Top-Level Domains</strong></h6>
+                    <img src="./Assets/nameStat_gTLDsCities.PNG">
+                </div>
+            </div>
+
+
             <!--Footer Page Nav-->
-            <nav aria-label="...">
+            <div class="col-sm-11 pagination justify-content-end">
                 <ul class="pagination justify-content-end">
                     <li class="page-item disabled">
                         <span class="page-link">Previous</span>
                     </li>
-                    <li class="page-item active" aria-current="page"><span class="page-link"> 1 <span class="sr-only">(current)</span></span></li>
+                    <li class="page-item active" aria-current="page"><span class="page-link"> 1 <span class="sr-only">(current)</span></span>
+                    </li>
                     <li class="page-item"><a class="page-link" href="routing.html">2</a></li>
                     <li class="page-item"><a class="page-link" href="dns.html">3</a></li>
                     <li class="page-item"><a class="page-link" href="http.html">4</a></li>
@@ -108,7 +138,7 @@
                         <a class="page-link" href="routing.html">Next</a>
                     </li>
                 </ul>
-            </nav>
+            </div>
         </div>
     </div>
 </div>

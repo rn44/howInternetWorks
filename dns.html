@@ -10,7 +10,7 @@
           integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
     <!--Title in Browser-->
-    <title>The Project</title>
+    <title>Domain Name Server (DNS)</title>
 </head>
 <body>
 
@@ -41,8 +41,7 @@
             </li>
         </ul>
     </div>
-    <a class="navbar-brand justify-content-end" href="https://njit.instructure.com/courses/12731"
-       target="_blank">IS-601</a>
+    <a class="navbar-brand" href="https://njit.instructure.com/courses/12731" target="_blank">IS-601</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -55,13 +54,13 @@
         <!--Sidebar Card-->
         <div class="col-sm-3 d-flex justify-content-center">
             <div class="card" style="width: 18rem;">
-                <img src="./Assets/internet.jpg" class="card-img-top" alt="Internet">
+                <img src="./Assets/servers.jpg" class="card-img-top" alt="Internet">
                 <div class="card-body">
-                    <h5 class="card-title"><strong>The Project</strong></h5>
+                    <h5 class="card-title"><a href="aboutPage.html">The Project</a></h5>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item"><a href="icann.html">Domain Names and ICANN</a></li>
                         <li class="list-group-item"><a href="routing.html">IP Address, Packets, and Routing</a></li>
-                        <li class="list-group-item"><a href="routing.html">Domain Name Server (DNS)</a></li>
+                        <li class="list-group-item"><strong>Domain Name Server (DNS)</strong></li>
                         <li class="list-group-item"><a href="http.html">HTTP and HTTPS protocols</a></li>
                         <li class="list-group-item"><a href="w3c.html">W3C and HTML and CSS</a></li>
                     </ul>
@@ -70,44 +69,36 @@
         </div>
         <!--Project Description-->
         <div class="col-sm-9">
-            <h2>The Project</h2>
+            <h2>Domain Name Server (DNS)</h2>
             <p>
-                This assignment is a continuation of a previous project titled,<a
-                    href="https://rn44.github.io/historyInternet/index.html" target="_blank"><strong>"History of the
-                Internet"</strong></a>.
+                Most people never know or see actual IP addresses due to DNS. DNS stands for domain name server. The purpose of these servers is to act like a lookup table or phonebook. First, a user from their web browser, will enter the name of a website they want to go to. For example, a user can type in www.google.com. The web browser then puts out a request to a DNS server that attempts to correlate that name to an actual address.
             </p>
             <p>
-                While that project goes through a rudimentary introduction to the internet and its history, this project
-                is focused on how the internet has evolved and works today.
+                One example of a public DNS server is Google. If all else fails, users can attempt to configure their internet capable device to communicate first with Google at the address 8.8.8.8 which will then look up the appropriate forwarding address to send to the user’s device.
             </p>
             <p>
-                The first topic covered in this project is the <a href="icann.html">Domain Names and ICANN</a>. Here we
-                focus on what domains are and the regulatory body that manages them.
+                DNS servers are broken up in a manner that dedicates certain servers to handle certain website types. For example, some servers only handle .com while others handle .org domains. DNS was originally designed to be an open and public communication protocol. Due to its openness, however, it is susceptible to cyber-attacks like DNS spoofing. This allows malicious users to reroute unknowing users to fake or incorrect websites. Both DNS and IP addresses were designed with scalability in mind.
             </p>
-            <p>
-                The next topic is how the addressing scheme of the internet as well has how information is sent and
-                received. This is all covered in the <a href="routing.html">IP Address, Packets, and Routing</a>
-                section.
-            </p>
-            <p>
-                How IP addresses and Domain Names correlate and allow users to get to where they want to go is covered
-                in the next section, <a href="dns.html">Domain Name Server (DNS)</a>.
-            </p>
-            <p>
-                Next we take a look at how the internet is accessed, as well as a brief discussion about security can be
-                viewed in the <a href="http.html">HTTP and HTTPS protocols</a> section.
-            </p>
-            <p>
-                Lastly, we discuss the visual evolution of the browser renderings through graphic markups thanks to <a
-                    href="w3c.html">W3C and HTML and CSS</a>.
-            </p>
+
+            <!--Footer Page Nav-->
             <div class="col-sm-11 pagination justify-content-end">
-                <a class="btn btn-dark btn-lg" href="icann.html" role="button">Start Learning</a>
+                <ul class="pagination justify-content-end">
+                    <li class="page-item">
+                        <a class="page-link" href="routing.html">Previous</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="icann.html">1</a></li>
+                    <li class="page-item"><a class="page-link" href="routing.html">2</a></li>
+                    <li class="page-item active" aria-current="page"><span class="page-link"> 3 <span class="sr-only">(current)</span></span></li>
+                    <li class="page-item"><a class="page-link" href="http.html">4</a></li>
+                    <li class="page-item"><a class="page-link" href="w3c.html">5</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="http.html">Next</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
 </div>
-
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->

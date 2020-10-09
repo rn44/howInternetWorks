@@ -10,7 +10,7 @@
           integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
     <!--Title in Browser-->
-    <title>The Project</title>
+    <title>W3C and HTML and CSS</title>
 </head>
 <body>
 
@@ -41,8 +41,7 @@
             </li>
         </ul>
     </div>
-    <a class="navbar-brand justify-content-end" href="https://njit.instructure.com/courses/12731"
-       target="_blank">IS-601</a>
+    <a class="navbar-brand" href="https://njit.instructure.com/courses/12731" target="_blank">IS-601</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -55,59 +54,55 @@
         <!--Sidebar Card-->
         <div class="col-sm-3 d-flex justify-content-center">
             <div class="card" style="width: 18rem;">
-                <img src="./Assets/internet.jpg" class="card-img-top" alt="Internet">
+                <img src="./Assets/html.jpg" class="card-img-top" alt="Internet">
                 <div class="card-body">
-                    <h5 class="card-title"><strong>The Project</strong></h5>
+                    <h5 class="card-title"><a href="aboutPage.html">The Project</a></h5>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item"><a href="icann.html">Domain Names and ICANN</a></li>
                         <li class="list-group-item"><a href="routing.html">IP Address, Packets, and Routing</a></li>
-                        <li class="list-group-item"><a href="routing.html">Domain Name Server (DNS)</a></li>
+                        <li class="list-group-item"><a href="dns.html">Domain Name Server (DNS)</a></li>
                         <li class="list-group-item"><a href="http.html">HTTP and HTTPS protocols</a></li>
-                        <li class="list-group-item"><a href="w3c.html">W3C and HTML and CSS</a></li>
+                        <li class="list-group-item"><strong>W3C and HTML and CSS</strong></li>
                     </ul>
                 </div>
             </div>
         </div>
         <!--Project Description-->
         <div class="col-sm-9">
-            <h2>The Project</h2>
+            <h2>W3C and HTML and CSS</h2>
             <p>
-                This assignment is a continuation of a previous project titled,<a
-                    href="https://rn44.github.io/historyInternet/index.html" target="_blank"><strong>"History of the
-                Internet"</strong></a>.
+                As mentioned in the first section of the project, Tim Berners-Lee brought about the core requirements and building blocks to make the internet accessible to the average person. With the invention of the World Wide Web via the standardization of <a href="http.html">HTTP and other protocols</a>, Berners-Lee created a standardized platform that allowed the internet to become the huge, ever growing monster it is today.
             </p>
             <p>
-                While that project goes through a rudimentary introduction to the internet and its history, this project
-                is focused on how the internet has evolved and works today.
+                Tim Berners-Lee not only helped to pioneer the World Wide Web, all associated protocols, and the very first versions of HTML in 1989, but in 1994 he also helped found the World Wide Web Consortium (W3C). Berners-Lee is still actively involved in the internet and its inner workings. He currently sits on the Board as its Director.
             </p>
             <p>
-                The first topic covered in this project is the <a href="icann.html">Domain Names and ICANN</a>. Here we
-                focus on what domains are and the regulatory body that manages them.
+                HTML stands for hypertext markup language and is the language used to tell a web browser how a page should look. HTML is made up of tags for fonts, links, images, formatting, alignment, etc. Images and videos are not included in HTML but see separate files that are linked to via separate URLs. These requests are handled via separate HTTP requests from the main page and are displayed as they come in.
             </p>
             <p>
-                The next topic is how the addressing scheme of the internet as well has how information is sent and
-                received. This is all covered in the <a href="routing.html">IP Address, Packets, and Routing</a>
-                section.
+                CSS, which stands for Cascading Style Sheets, expands on HTML and other markup languages. While HTML can be thought of as the frame of a house, the CSS can be thought of as the siding, paint, and furniture. Instead of being limited by the defaults and sometimes rigid formatting of HTML, CSS enables the separation of presentation and content, including layout, colors, and fonts. CSS and its standards are also maintained by W3C.
             </p>
-            <p>
-                How IP addresses and Domain Names correlate and allow users to get to where they want to go is covered
-                in the next section, <a href="dns.html">Domain Name Server (DNS)</a>.
-            </p>
-            <p>
-                Next we take a look at how the internet is accessed, as well as a brief discussion about security can be
-                viewed in the <a href="http.html">HTTP and HTTPS protocols</a> section.
-            </p>
-            <p>
-                Lastly, we discuss the visual evolution of the browser renderings through graphic markups thanks to <a
-                    href="w3c.html">W3C and HTML and CSS</a>.
-            </p>
+
+
+            <!--Footer Page Nav-->
             <div class="col-sm-11 pagination justify-content-end">
-                <a class="btn btn-dark btn-lg" href="icann.html" role="button">Start Learning</a>
+                <ul class="pagination justify-content-end">
+                    <li class="page-item ">
+                        <a class="page-link" href="http.html">Previous</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="icann.html">1</a></li>
+                    <li class="page-item"><a class="page-link" href="routing.html">2</a></li>
+                    <li class="page-item"><a class="page-link" href="dns.html">3</a></li>
+                    <li class="page-item"><a class="page-link" href="http.html">4</a></li>
+                    <li class="page-item active" aria-current="page"><span class="page-link"> 5 <span class="sr-only">(current)</span></span></li>
+                    <li class="page-item disabled">
+                        <span class="page-link">Next</span>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
 </div>
-
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Required Tags-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <meta name="description" content="This is a brief history of the Internet for a school project">
+    <!--Bootstrap Tags-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!--Title in Browser-->
+    <title>HTTP and HTTPS protocols</title>
+</head>
+<body>
+
+<!--Header NavBar-->
+<nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    The Project
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="aboutPage.html">About the Project</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="icann.html">Domain Names and ICANN</a>
+                    <a class="dropdown-item" href="routing.html">IP Address, Packets, and Routing</a>
+                    <a class="dropdown-item" href="dns.html">Domain Name Server (DNS)</a>
+                    <a class="dropdown-item" href="http.html">HTTP and HTTPS protocols</a>
+                    <a class="dropdown-item" href="w3c.html">W3C and HTML and CSS</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="teamPage.html">About Me</a>
+            </li>
+        </ul>
+    </div>
+    <a class="navbar-brand" href="https://njit.instructure.com/courses/12731" target="_blank">IS-601</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+
+<!--Main Page-->
+<div class="container-fluid mt-3">
+    <div class="row">
+        <!--Sidebar Card-->
+        <div class="col-sm-3 d-flex justify-content-center">
+            <div class="card" style="width: 18rem;">
+                <img src="./Assets/https.jpg" class="card-img-top" alt="Internet">
+                <div class="card-body">
+                    <h5 class="card-title"><a href="aboutPage.html">The Project</a></h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><a href="icann.html">Domain Names and ICANN</a></li>
+                        <li class="list-group-item"><a href="routing.html">IP Address, Packets, and Routing</a></li>
+                        <li class="list-group-item"><a href="dns.html">Domain Name Server (DNS)</a></li>
+                        <li class="list-group-item"><strong>HTTP and HTTPS protocols</strong></li>
+                        <li class="list-group-item"><a href="w3c.html">W3C and HTML and CSS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--Project Description-->
+        <div class="col-sm-9">
+            <h2>HTTP and HTTPS protocols</h2>
+            <p>
+                To access the internet, you use a web browser to enter the URL (uniform resource locator) of a webpage. Your computer then reaches out to a DNS which sends HTTP responses back to your computer. HTTP stands for hypertext transfer protocol and is the language used to communicate between web browsers and servers. These are relatively simple messages mainly made up of “Get” requests. Get requests are simple lookup requests (i.e. get document-name or get /login).
+            </p>
+            <p>
+                Obviously, the more image, video, other HTTP requests, the slower a webpage will load. When sending information to a server, your computer sends “Post” requests to servers. One simple and common example is a post requests to websites with login information. Web browsers then take this back and forth of Gets and Ports and stores any relevant information in cookies. Cookies are temporary files that allow websites to save data and remember things like who you are.
+            </p>
+            <p>
+                HTTP communications are handled via plain text requests and are susceptible to hackers and other security vulnerabilities. This led to creation of SSL (secure socket layer) and TSL (transport layer security) incorporated into HTTPS. This is done via digital certificates that provided by verified websites. If the certificates being sent by websites have not been verified, you web browser will warn you.
+            </p>
+            <p>
+                Encryption (scrambling or changing a message to hide it) allows us to safely transfer private data over the open and unsecured internet. Decryption is the process of unscrambling am encrypted message to make it readable. Caesar's Cypher was one of the first encryption methods.
+            </p>
+            <p>
+                Based on Caesar's idea of "encrypting" messages so that intercepted messages were unreadable to his enemies, letters in the messages were shifted a certain number of letters up or down in the alphabet, for example, all letters were shifted up or down 3 letters. Keys are the number of letters that a sender and receiver have agreed upon so that the messages can be unlocked. HELLO with a key of 5 would be MJQQT.
+            </p>
+            <p>
+                This cypher is extremely simple and easy to crack. So much so, that using brute force would only take at most 26 different shift combinations. A 10-digit encryption key on the other hand would create 10 billion possible solutions. While this would take a human being several centuries to decrypt, it would still only take a computer seconds to do the same. Today's encryption keys are made up of 256 bits.
+            </p>
+            <p>
+                Symmetric encryption is when the same key is used to encrypt and decrypt messages. Asymmetric encryption is what is used by communication on the internet. There is a public key for encrypting and a private key for decrypting. The public key is shared so that anyone can encrypt messages (normally sent by websites to clients). This way messages can only be decrypted once received back to website servers via their private keys.
+            </p>
+            <p>
+                One real world analogy for this would be that public keys can open delivery slots on mailboxes, private keys can open the mailbox itself. This pubic / private key encryption method is the basis for SSL and TLS encryption protocols. Web browsers indicate this with the lock icon and https.
+            </p>
+
+            <!--Footer Page Nav-->
+            <div class="col-sm-11 pagination justify-content-end">
+                <ul class="pagination justify-content-end">
+                    <li class="page-item">
+                        <a class="page-link" href="dns.html">Previous</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="icann.html">1</a></li>
+                    <li class="page-item"><a class="page-link" href="routing.html">2</a></li>
+                    <li class="page-item"><a class="page-link" href="dns.html">3</a></li>
+                    <li class="page-item active" aria-current="page"><span class="page-link"> 4 <span class="sr-only">(current)</span></span></li>
+                    <li class="page-item"><a class="page-link" href="w3c.html">5</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="w3c.html">Next</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
