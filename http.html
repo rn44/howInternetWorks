@@ -60,7 +60,7 @@
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item"><a href="icann.html">Domain Names and ICANN</a></li>
                         <li class="list-group-item"><a href="routing.html">IP Address, Packets, and Routing</a></li>
-                        <li class="list-group-item"><a href="http.html">Domain Name Server (DNS)</a></li>
+                        <li class="list-group-item"><a href="dns.html">Domain Name Server (DNS)</a></li>
                         <li class="list-group-item"><strong>HTTP and HTTPS protocols</strong></li>
                         <li class="list-group-item"><a href="w3c.html">W3C and HTML and CSS</a></li>
                     </ul>
@@ -71,25 +71,28 @@
         <div class="col-sm-9">
             <h2>HTTP and HTTPS protocols</h2>
             <p>
-                This project is a continuation of a previous project titled,<a href="https://rn44.github.io/historyInternet/index.html" target="_blank"><strong>"History of the Internet"</strong></a>.
+                To access the internet, you use a web browser to enter the URL (uniform resource locator) of a webpage. Your computer then reaches out to a DNS which sends HTTP responses back to your computer. HTTP stands for hypertext transfer protocol and is the language used to communicate between web browsers and servers. These are relatively simple messages mainly made up of “Get” requests. Get requests are simple lookup requests (i.e. get document-name or get /login).
             </p>
             <p>
-                While that project goes through a rudimentary introduction to the internet and its history, this project is focused on how the internet has evolved and works today.
+                Obviously, the more image, video, other HTTP requests, the slower a webpage will load. When sending information to a server, your computer sends “Post” requests to servers. One simple and common example is a post requests to websites with login information. Web browsers then take this back and forth of Gets and Ports and stores any relevant information in cookies. Cookies are temporary files that allow websites to save data and remember things like who you are.
             </p>
             <p>
-                The first topic covered in this project is the <a href="icann.html">Domain Names and ICANN</a>. Here we focus on what domains are and the regulatory body that manages them.
+                HTTP communications are handled via plain text requests and are susceptible to hackers and other security vulnerabilities. This led to creation of SSL (secure socket layer) and TSL (transport layer security) incorporated into HTTPS. This is done via digital certificates that provided by verified websites. If the certificates being sent by websites have not been verified, you web browser will warn you.
             </p>
             <p>
-                The next topic is how the addressing scheme of the internet as well has how information is sent and received. This is all covered in the <a href="routing.html">IP Address, Packets, and Routing</a> section.
+                Encryption (scrambling or changing a message to hide it) allows us to safely transfer private data over the open and unsecured internet. Decryption is the process of unscrambling am encrypted message to make it readable. Caesar's Cypher was one of the first encryption methods.
             </p>
             <p>
-                How IP addresses and Domain Names correlate and allow users to get to where they want to go is covered in the next section, <a href="dns.html">Domain Name Server (DNS)</a>.
+                Based on Caesar's idea of "encrypting" messages so that intercepted messages were unreadable to his enemies, letters in the messages were shifted a certain number of letters up or down in the alphabet, for example, all letters were shifted up or down 3 letters. Keys are the number of letters that a sender and receiver have agreed upon so that the messages can be unlocked. HELLO with a key of 5 would be MJQQT.
             </p>
             <p>
-                Next we take a look at how the internet is accessed, as well as a brief discussion about security can be viewed in the <a href="http.html">HTTP and HTTPS protocols</a> section.
+                This cypher is extremely simple and easy to crack. So much so, that using brute force would only take at most 26 different shift combinations. A 10-digit encryption key on the other hand would create 10 billion possible solutions. While this would take a human being several centuries to decrypt, it would still only take a computer seconds to do the same. Today's encryption keys are made up of 256 bits.
             </p>
             <p>
-                Lastly, we discuss the visual evolution of the browser renderings through graphic markups thanks to <a href="w3c.html">W3C and HTML and CSS</a>.
+                Symmetric encryption is when the same key is used to encrypt and decrypt messages. Asymmetric encryption is what is used by communication on the internet. There is a public key for encrypting and a private key for decrypting. The public key is shared so that anyone can encrypt messages (normally sent by websites to clients). This way messages can only be decrypted once received back to website servers via their private keys.
+            </p>
+            <p>
+                One real world analogy for this would be that public keys can open delivery slots on mailboxes, private keys can open the mailbox itself. This pubic / private key encryption method is the basis for SSL and TLS encryption protocols. Web browsers indicate this with the lock icon and https.
             </p>
 
             <!--Footer Page Nav-->
